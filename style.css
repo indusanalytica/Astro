@@ -51,6 +51,9 @@ p{
     font-size: 2rem;
     font-weight: 500;
 }
+#header .brand h1 span{
+color: crimson;
+}
 #header .nav-bar{
     display: flex;
     align-items: center;
@@ -245,11 +248,14 @@ animation-delay: 2s;
     margin-top: 30px;
     transition: .3s ease;
     transition-property:  background-color,color;
-    font-weight: 700;
+    font-weight: 500;
 }
 #hero .hero-button:hover{
     color: white;
     background-color:  rgb(218, 212, 134);
+}
+#hero .hero-button .cta{
+    color:crimson; 
 }
 
 /* End Hero Section*/
@@ -323,12 +329,24 @@ animation-delay: 2s;
     margin-bottom: 20px;
     margin-left:20px ;
 }
+#services .service-item:hover .icon{
+    height: 260px;
+    width:260px;
+    margin-bottom: 10px;
+    margin-left:10px ;
+    margin-left: 10px;
+    background: #e1e1e1;
+    border: 2px solid crimson;
+}
 #services .service-item h2{
     font-size: 2rem;
     padding-left: 2rem;
     text-align: center;
     color: white;
     margin-bottom: 1px;
+}
+#services .service-item:hover h2{
+    color: crimson;
 }
 #services .service-item p{
     font-size: 1.4rem;
@@ -337,6 +355,162 @@ animation-delay: 2s;
     line-height:1.9rem ;
 }
 /* End of Service Section*/
+
+/*Consultation section Begins */
+#consultation .consultation{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+
+}
+#consultation .section-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color:black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+
+}
+#consultation .section-title span{
+    color:crimson;
+}
+#consultation .consultation-top p{
+    font-size: 1.4rem;
+    margin-top: 5px ;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+    color: black;
+}
+#consultation .consultation-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+#consultation .consultation-item{
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url(./images/servicebkg_02mustard.jpg);
+    background-size: cover;
+    margin: 10px 5%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+#consultation .consultation-item::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top:0;
+    height: 100%;
+    width:100%;
+    background-color: black;
+    opacity: .1;
+    z-index: -1;
+}
+#consultation .consultation-item .icon{
+    height: 250px;
+    width:250px;
+    margin-bottom: 20px;
+    margin-left:20px ;
+}
+#consultation .consultation-item:hover .icon{
+    height: 260px;
+    width:260px;
+    margin-bottom: 10px;
+    margin-left:10px ;
+    margin-left: 10px;
+    background: #e1e1e1;
+    border: 2px solid crimson;
+}
+#consultation .consultation-item h2{
+    font-size: 2rem;
+    padding-left: 2rem;
+    text-align: center;
+    color: white;
+    margin-bottom: 1px;
+
+}
+#consultation .consultation-item:hover h2{
+    color: crimson;
+}
+#consultation .consultation-item p{
+    font-size: 1.4rem;
+    text-align: left;
+    color:white;
+    line-height:1.9rem ;
+}
+/*Consultation section Ends */
+
+/*About section */
+
+#contact .contact{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#contact .contact-items{
+    width: 400px;
+}
+#contact .contact-item{
+    width:80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 18px 0 #0000002c;
+    transition: .3s ease box-shadow;
+}
+#contact .contact-item:hover{
+    box-shadow:0px 0px 5px 0  #0000002c ;
+}
+#contact .icon{
+    width: 70px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+#contact .contact-info h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+#contact .contact-info h2{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+#contact .section-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color:black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+
+}
+#contact .section-title span{
+    color:crimson;
+}
+
+/*About section Ends*/
 /*Top Button*/
 #myBtn {
     display: none; /* Hidden by default */
@@ -389,6 +563,47 @@ animation-delay: 2s;
         color:crimson ;
     }
 }
+@media only screen and (min-width:768px){
+  
+    
+    /*services */
+    #services .service-bottom .service-item{
+        flex-basis: 42%;
+        margin: 1.5%; 
+    }
+    #services .service-item .icon{
+        margin-left:10px ;
+        background: #eee;
+        border-top: 0px solid transparent;
+    }
+    #services .service-item:hover .icon{
+        background: #e1e1e1;
+        border: 2px solid crimson;
+    }
+    /*services End */
+    /*consultation  */
+    #consultation .consultation-bottom .consultation-item{
+        flex-basis: 42%;
+        margin: 1.5%; 
+    }
+    #consultation .consultation-item .icon{
+        margin-left:10px ;
+        background:white;
+        border-top: 0px solid transparent;
+    }
+    #consultation .consultation-item:hover .icon{
+        background: #e1e1e1;
+        border: 2px solid crimson;
+    }
+    /*consultation End */
+    #hero .hero-img {
+    position: absolute;
+    top: 1;
+    left: 0;
+    height: 600px;
+    width:400px;
+    }
+}
 @media only screen and (min-width:1200px){
     /*header */
     #header .hamburger{
@@ -411,13 +626,36 @@ animation-delay: 2s;
         display: none;
     }
     /* end header*/
+    /*services */
     #services .service-bottom .service-item{
         flex-basis: 22%;
         margin: 1.5%; 
     }
     #services .service-item .icon{
         margin-left:10px ;
+        background: #eee;
+        border-top: 0px solid transparent;
     }
+    #services .service-item:hover .icon{
+        background: #e1e1e1;
+        border: 2px solid crimson;
+    }
+    /*services End */
+    /*consultation  */
+    #consultation .consultation-bottom .consultation-item{
+        flex-basis: 22%;
+        margin: 1.5%; 
+    }
+    #consultation .consultation-item .icon{
+        margin-left:10px ;
+        background:white;
+        border-top: 0px solid transparent;
+    }
+    #consultation .consultation-item:hover .icon{
+        background: #e1e1e1;
+        border: 2px solid crimson;
+    }
+    /*consultation End */
     #hero .hero-img {
     position: absolute;
     top: 1;
