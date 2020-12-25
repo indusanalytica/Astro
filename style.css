@@ -199,7 +199,7 @@ display: block;
     width:150px;
 }
 #hero h1 {
-    top: 65%;
+    top: 68%;
     display: block;
     width: fit-content;
     font-size: 4rem;
@@ -215,6 +215,7 @@ animation-delay: 1s;
 #hero h1:nth-child(2){
 animation: text_reveal_astro .5s ease forwards;
 animation-delay: 2s; 
+top: 78%;
 }
 #hero h1 span {
     position: absolute;
@@ -580,6 +581,13 @@ animation-delay: 2s;
         background: #e1e1e1;
         border: 2px solid crimson;
     }
+
+    #hero h1:nth-child(2){
+        animation: text_reveal_astro .5s ease forwards;
+        animation-delay: 2s; 
+        top: 74%;
+        }
+    
     /*services End */
     /*consultation  */
     #consultation .consultation-bottom .consultation-item{
@@ -625,6 +633,11 @@ animation-delay: 2s;
     #header .nav-list ul a::after{
         display: none;
     }
+    #hero h1:nth-child(2){
+        animation: text_reveal_astro .5s ease forwards;
+        animation-delay: 2s; 
+        top: 75%;
+        }
     /* end header*/
     /*services */
     #services .service-bottom .service-item{
