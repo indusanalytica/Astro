@@ -193,10 +193,14 @@ display: block;
 }
 #hero .hero-img {
     position: absolute;
-    top: 10%;
-    left: 2rem;
-    height: 300px;
-    width:150px;
+    top: 15%;
+    left: 16rem;
+    height: 400px;
+    width:260px;
+}
+#hero .img{
+    position: absolute;
+    top: 67%;
 }
 #hero h1 {
     top: 68%;
