@@ -208,15 +208,20 @@ display: block;
     animation: text_reveal .5s ease forwards;
     animation-delay: 0 .5s;
     left:40%;
+
 }
 #hero h1:nth-child(1){
 animation-delay: 1s;
 }
 #hero h1:nth-child(2){
-animation: text_reveal_astro .5s ease forwards;
-animation-delay: 2s; 
-top: 78%;
+animation-delay: 1s; 
+top: 73%;
 }
+#hero h1:nth-child(3){
+    animation: text_reveal_astro .5s ease forwards;
+    animation-delay: 1.5s; 
+    top: 78%;
+    }
 #hero h1 span {
     position: absolute;
     top:0;
@@ -232,6 +237,9 @@ top: 78%;
     animation: delay 1s; 
 }
 #hero h1:nth-child(2) span{
+    animation: delay 1s; 
+}
+#hero h1:nth-child(3) span{
     animation: delay 1s; 
 }
 #hero .hero-button{
