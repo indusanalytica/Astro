@@ -313,7 +313,6 @@ top: 73%;
     margin-top: 50px;
 }
 #services .service-item{
-    flex-basis: 80%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -322,7 +321,7 @@ top: 73%;
     border-radius: 10px;
     background-image: url(./images/servicebkg_02mustard.jpg);
     background-size: cover;
-    margin: 10px 5%;
+    margin: 15px -1%;
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -340,7 +339,7 @@ top: 73%;
 }
 #services .service-item .icon{
     height: 250px;
-    width:300px;
+    width:310px;
     margin-bottom: 20px;
     margin-left:20px ;
 }
@@ -409,7 +408,6 @@ top: 73%;
     margin-top: 50px;
 }
 #consultation .consultation-item{
-    flex-basis: 80%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -442,7 +440,7 @@ top: 73%;
 }
 #consultation .consultation-item:hover .icon{
     height: 260px;
-    width:260px;
+    width:310px;
     margin-bottom: 10px;
     margin-left:10px ;
     margin-left: 10px;
