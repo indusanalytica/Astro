@@ -1,35 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:300,400,700&display=swap');
- * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;  
-}
-html{
-    font-size: 10px;
-    font-family:'Montserrat',sans-serif ;
-    scroll-behavior: smooth;
-}
-a{
-    text-decoration: none;
-}
-.container{
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-img{
-    height: 100%;
-    width:100%;
-    object-fit: cover;
-}
-p{
-    font-size: 1.4rem;
-    text-align: left;
-    color:white;
-    line-height:1.9rem ;
-}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+  }
+  html{
+      font-size: 10px;
+      font-family:'Montserrat',sans-serif ;
+      scroll-behavior: smooth;
+  }
+  a{
+      text-decoration: none;
+  }
+  .container{
+      min-height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  img{
+      height: 100%;
+      width:100%;
+      object-fit: cover;
+  }
+  p{
+      font-size: 1.4rem;
+      text-align: left;
+      color:white;
+      line-height:1.9rem ;
+  }
 /* Header Section*/
 #header{
     position: fixed;
@@ -175,6 +175,7 @@ display: block;
     position: relative;
     z-index: 1;
 }
+
 #hero::after{
     content:'';
     position: absolute;
@@ -273,6 +274,56 @@ top: 73%;
 }
 
 /* End Hero Section*/
+
+/*  SunSign Section*/
+
+#sunsign .sunsign{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+    min-height: fit-content;
+    margin-top: 10rem;
+}
+#sunsign .section-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color:black;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+
+}
+#sunsign .section-title span{
+    color:crimson;
+}
+#sunsign .row{
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  #sunsign .column{
+    -ms-flex: 16.5%; /* IE10 */
+    flex: 16.5%;
+    max-width: 16.5%;
+    padding: 0 4px;
+  }
+  
+  #sunsign .icon{
+    width:75px;
+    height:75px;
+    margin: 8px;
+  }
+
+  
+/* End SunSign Section*/
+
 /* Service Section*/
 
 #services .services{
@@ -586,11 +637,18 @@ top: 73%;
 @media only screen and (min-width:768px){
   
     
+     /*sunsign */
+   
+      
+     #sunsign .icon{
+        width:100px;
+        height:100px;
+        margin: 10px;
+      }
+
+    /*sunsign Ends */
     /*services */
-    #services .service-bottom .service-item{
-        flex-basis: 42%;
-        margin: 1.5%; 
-    }
+ 
     #services .service-item .icon{
         margin-left:10px ;
         background: #eee;
@@ -654,11 +712,19 @@ top: 73%;
     }
   
     /* end header*/
+
+    /*sunsign */
+   
+      
+      #sunsign .icon{
+        width:150px;
+        height:150px;
+        margin: 16px;
+      }
+
+    /*sunsign Ends */
     /*services */
-    #services .service-bottom .service-item{
-        flex-basis: 22%;
-        margin: 1.5%; 
-    }
+  
     #services .service-item .icon{
         margin-left:10px ;
         background: #eee;
@@ -671,7 +737,7 @@ top: 73%;
     /*services End */
     /*consultation  */
     #consultation .consultation-bottom .consultation-item{
-        flex-basis: 22%;
+        flex-basis: 25%;
         margin: 1.5%; 
     }
     #consultation .consultation-item .icon{
